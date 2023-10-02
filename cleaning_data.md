@@ -1,10 +1,15 @@
---What issues will you address by cleaning the data?
+# Cleaning Data
 
+## Cleaning steps to be taken.
 
---change the not set in country and city to null
-
--- change date's data type
--- change data types of certain columns that were set to incorrect values while importing data from the csv file   
+### all_sessions table
+1. Change the "not set" values in **country** and **city** to null.
+2. Change **date**'s data type.
+3. Replace null values in **product revenue** column by imputing values from **product price** and **product quantity**.
+4. Drop **item revenue** and **item quantity** columns as all the values are null
+3. change data types of certain columns that were set to incorrect values. 
+while importing data from the csv file. 
+   
 -- Trailing 99 suggests that it is the pricing stratigy after the decimal. fix the pricing for the products by removing 4 zeros from the back and adding a decimal appropriately
 -- Following issues needs to be addressed in analytics table
 -- Duplicate columns in the table needs to be removed which also exist in the all_sessions tabl and are not id.
